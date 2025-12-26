@@ -45,6 +45,8 @@ pub fn build(b: *std.Build) void {
         });
     }
 
+    b.installArtifact(lib);
+
     // Add run steps for the samples.
     const samples = .{
         "get_distance",

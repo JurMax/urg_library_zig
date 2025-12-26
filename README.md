@@ -38,18 +38,19 @@ zig build -Dcpp sensor_parameter
 
 First, fetch this repository:
 
-```bash
-zig fetch --save git+https://github.com/JurMax/urg_library_zig
+```sh
+\$ zig fetch --save git+https://github.com/JurMax/urg_library_zig
 ```
 
 Next, add it to your `build.zig`:
 
 ```zig
-const urg_library = b.dependency("urg_library_zig", .{
+const urg_dependency = b.dependency("urg_library_zig", .{
     .target = target,
     .optimize = optimize,
+    .cpp = false, // Set to true to use the C++ bindings.
 });
-exe.linkLibrary(urg_library);
+exe.linkLibrary(urg_dependency.artifact("urg_library"));
 ```
 
 This will add the URG library and headers to `exe`.
