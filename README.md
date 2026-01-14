@@ -39,7 +39,7 @@ zig build -Dcpp sensor_parameter
 First, fetch this repository:
 
 ```sh
-\$ zig fetch --save git+https://github.com/JurMax/urg_library_zig
+zig fetch --save git+https://github.com/JurMax/urg_library_zig
 ```
 
 Next, add it to your `build.zig`:
