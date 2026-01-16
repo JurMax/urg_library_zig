@@ -3,8 +3,8 @@
     .version = "1.2.9",
     .dependencies = .{
         .urg_library = .{
-            .url = "https://github.com/UrgNetwork/urg_library/archive/refs/tags/ver.1.2.9.tar.gz",
-            .hash = "N-V-__8AALl8FAB6lWGEtWMz2JtaXwtClOK0Cz8u1isGhljX",
+            .url = "git+https://github.com/UrgNetwork/urg_library#917a4e7d117fc57dbc3775881701d93d67b1cd99",
+            .hash = "N-V-__8AAIF9FABc6NZ7hiq2GSwJ5vW-5R4PSmCGq-H1578b",
         },
     },
     .minimum_zig_version = "0.15.2",
